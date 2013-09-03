@@ -1,5 +1,5 @@
 #sbs-git:slp/pkgs/xorg/driver/xserver-xorg-misc xserver-xorg-misc 0.0.1 13496ac354ad7f6709f1ef9b880a206a2df41c80
-Name:	xorg-x11-misc-exynos
+Name:	xf86-misc-exynos4412
 Summary:    X11 X server misc files for exynos
 Version:    0.0.19
 Release:    1
