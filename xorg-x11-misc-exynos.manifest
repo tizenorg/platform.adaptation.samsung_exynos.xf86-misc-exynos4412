@@ -1,6 +1,6 @@
 <manifest>
 	<request>
-		<domain name="xorg"/>
+		<domain name="_"/>
 	</request>
 	<assign>
                 <filesystem path="/etc/rc.d/init.d/xserver" label="_" exec_label="none" />
