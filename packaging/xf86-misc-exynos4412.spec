@@ -10,9 +10,9 @@ Source0:    %{name}-%{version}.tar.gz
 Source1:    xresources.service
 Source2:    xresources.path
 
-Requires:   xserver-xorg-core
-Requires:   xorg-x11-drv-evdev-multitouch
-Requires(post):   xkeyboard-config
+#Requires:   xserver-xorg-core
+#Requires:   xorg-x11-drv-evdev-multitouch
+#Requires(post):   xkeyboard-config
 
 %description
 Description: %{summary}
