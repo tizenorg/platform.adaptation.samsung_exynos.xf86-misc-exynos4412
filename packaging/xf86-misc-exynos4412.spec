@@ -12,10 +12,6 @@ Source2:    xresources.path
 
 Requires:   xorg-server
 Requires:   xf86-input-evdevmultitouch
-Requires:   xf86-input-evdev
-Requires:   xf86-input-gesture
-Requires:   xf86-video-exynos
-Requires:   xf86-module-xdbg
 Requires(post):   xkeyboard-config
 
 %description
