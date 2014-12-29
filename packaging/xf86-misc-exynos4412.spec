@@ -1,9 +1,10 @@
+%bcond_with x
+
 #sbs-git:slp/pkgs/xorg/driver/xserver-xorg-misc xserver-xorg-misc 0.0.1 13496ac354ad7f6709f1ef9b880a206a2df41c80
 Name:	xf86-misc-exynos4412
 Summary:    X11 X server misc files for exynos
 Version:    0.0.20
 Release:    1
-ExclusiveArch:  %arm
 Group:      System/X11
 License:    MIT
 Source0:    %{name}-%{version}.tar.gz
@@ -13,6 +14,12 @@ Source2:    xresources.path
 Requires:   xorg-server
 Requires:   xf86-input-evdevmultitouch
 Requires(post):   xkeyboard-config
+
+%if !%{with x}
+ExclusiveArch:
+%else
+ExclusiveArch:  %arm aarch64
+%endif
 
 %description
 Description: %{summary}
