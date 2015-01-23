@@ -61,6 +61,7 @@ cp -af arm-common/xresources %{buildroot}/etc/rc.d/init.d/
 cp -af arm-common/xsetrc %{buildroot}/etc/X11/
 cp -af arm-common/Xmodmap %{buildroot}/etc/X11/
 cp -af arm-common/xinitrc %{buildroot}/etc/X11/
+cp -af arm-common/xkeysymbol.map %{buildroot}/etc/X11/
 ln -s /etc/rc.d/init.d/xserver %{buildroot}/etc/rc.d/rc3.d/S02xserver
 ln -s /etc/rc.d/init.d/xserver %{buildroot}/etc/rc.d/rc4.d/S02xserver
 ln -s /etc/rc.d/init.d/xresources %{buildroot}/etc/rc.d/rc4.d/S80xresources
@@ -88,6 +89,7 @@ mkdir -p /opt/var/log
 /etc/X11/xinitrc
 /etc/X11/xsetrc
 /etc/X11/Xmodmap
+/etc/X11/xkeysymbol.map
 /etc/X11/xorg.conf
 /etc/X11/xorg.conf.d/*.conf
 %{_bindir}/startx
